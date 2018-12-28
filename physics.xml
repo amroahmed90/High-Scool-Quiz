@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="#80DEEA"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="center_vertical"
+                    android:text="Physics"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/physics" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#80DEEA"
+                    android:text="Question 1"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is the unit for electric resistivity?"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/newton_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="firstQuestionPhysics"
+                        android:text="Newton"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/dynes_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="firstQuestionPhysics"
+                        android:text="Dynes"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/ohm_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="firstQuestionPhysics"
+                        android:text="Ohm"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/pascal_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="firstQuestionPhysics"
+                        android:text="Pascal"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="showPhysicsOne"
+                    android:text="Show answer" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#80DEEA"
+                    android:text="Question 2"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is the charge of a proton"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/positive_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="secondQuestionPhysics"
+                        android:text="Positive"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/negative_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="secondQuestionPhysics"
+                        android:text="Negative"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/neutral_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="secondQuestionPhysics"
+                        android:text="Neutral"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="showPhysicsTwo"
+                    android:text="Show answer" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#80DEEA"
+                    android:text="Question 3"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is defined as force acting on a unit area?"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/work_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="thirdQuestionPhysics"
+                        android:text="Work"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/pressure_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="thirdQuestionPhysics"
+                        android:text="Pressure"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/momentum_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="thirdQuestionPhysics"
+                        android:text="Momentum"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/mass_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="thirdQuestionPhysics"
+                        android:text="Mass"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="16sp" />
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="showPhysicsThree"
+                    android:text="Show answer" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#006064"
+                android:onClick="showPhysicsResults"
+                android:text="Calculate Results"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/physics_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0/3"
+                android:textSize="72sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
